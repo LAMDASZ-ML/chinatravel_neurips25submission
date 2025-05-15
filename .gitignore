@@ -1,0 +1,14 @@
+__pycache__/
+run_exp.sh
+eval_exp.sh
+cache/
+results/
+eval_res/
+debug.sh
+eval_1000.sh
+human150.sh
+results.md
+eval_human.sh
+try.py
+gpt.sh
+easy300.sh
