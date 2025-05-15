@@ -157,7 +157,8 @@ class NesyAgent(BaseAgent):
             if self.least_plan_logic is not None:
                 plan_out = self.least_plan_logic
 
-                plan_out["preference_value"] = self.least_plan_logic_pvalue
+                if preference_search:
+                    plan_out["preference_value"] = self.least_plan_logic_pvalue
 
                 print("The least plan with logic constraints: ", plan_out)
                 succ = True
