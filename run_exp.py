@@ -37,7 +37,7 @@ if __name__ == "__main__":
         "-a",
         type=str,
         default=None,
-        choices=["RuleNeSy", "LLMNeSy", "LLM-modulo", "ReAct", "ReAct0" "Act"],
+        choices=["RuleNeSy", "LLMNeSy", "LLM-modulo", "ReAct", "ReAct0", "Act"],
     )
     parser.add_argument(
         "--llm",

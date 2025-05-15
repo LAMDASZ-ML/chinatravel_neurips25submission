@@ -104,7 +104,8 @@ def load_query(args):
     
 
     for data_i in query_data:
-        data_i["hard_logic_py"] = ast.literal_eval(data_i["hard_logic_py"])
+        if "hard_logic_py" in data_i:
+            data_i["hard_logic_py"] = ast.literal_eval(data_i["hard_logic_py"])
     
     query_id_list = [data_i["uid"] for data_i in query_data]
     data_dict = {}

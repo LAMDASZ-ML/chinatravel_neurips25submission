@@ -491,14 +491,15 @@ def nl2sl_reflect(query, backbone_llm):
         "南京",
         "苏州",
     ]
-    if query["target_city"] not in city_list or query["start_city"] not in city_list:
-        query["hard_logic"] = []
-        query["hard_logic_py"] = []
-        query["ood"] = True
-        return query
-    checker = HardLogicPyChecker(query["target_city"])
+    if "target_city" in query and "start_city" in query:
+        if query["target_city"] not in city_list or query["start_city"] not in city_list:
+            query["hard_logic"] = []
+            query["hard_logic_py"] = []
+            query["ood"] = True
+            return query
     query = nl2sl_step1(query, backbone_llm)
     query = nl2sl_step2(query, backbone_llm)
+    checker = HardLogicPyChecker(query["target_city"])
     query = nl2sl_step3(query, backbone_llm, checker)
     query["hard_logic_py_iter_3"] = query["hard_logic_py"] 
 
