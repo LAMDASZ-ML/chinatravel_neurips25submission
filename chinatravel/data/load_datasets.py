@@ -92,10 +92,12 @@ def load_query(args):
                            "preference3_base50", "preference4_base50", "preference5_base50",
                            "human1000"]:
         return load_query_local(args)
-    config_name = "default"
+    config_name = "synthetic"
     if args.splits in ["preference0_base50", "preference1_base50", "preference2_base50",
                        "preference3_base50", "preference4_base50", "preference5_base50"]:
         config_name = "preference"
+    elif args.splits in ["human"]:
+        config_name = "validation"
     elif args.splits in ["human1000"]:
         config_name = "test"
     query_data = hg_load_dataset("LAMDA-NeSy/chinatravel_neurips25submission", name=config_name)[args.splits].to_list()
