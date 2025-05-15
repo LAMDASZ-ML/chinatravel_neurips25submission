@@ -24,6 +24,8 @@ pip install -r requirements.txt
 
 2. Download the database and unzip it to the chinatravel/environment/ directory
 
+3. Download necessary models or tokenizers (e.g. [deepseek tokenizer](https://cdn.deepseek.com/api-docs/deepseek_v3_tokenizer.zip)) to `./chinatravel/open_source_llm`
+
 Download Links: [Google Drive](https://drive.google.com/drive/folders/1bJ7jA5cfExO_NKxKfi9qgcxEbkYeSdAU?usp=drive_link), [NJU Drive](https://box.nju.edu.cn/d/dd83e5a4a9e242ed8eb4/)
 
 ### Running
