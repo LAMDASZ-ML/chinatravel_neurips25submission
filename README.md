@@ -10,19 +10,6 @@ Official codebase for the paper "ChinaTravel: A Real-World Benchmark for Languag
 <!-- 
 ![Overview](images/overview.png) -->
 
-## ChangeLog
-
-### 2025.04
-
-1. Added local data loaderUsers can now load custom queries locally. When specifying non-default splits_name values (e.g., "abc") in run_exp, the system will automatically load corresponding files from evaluation/default_splits/abc.txt, where the TXT file contains the target query filenames.
-2. Detailed constraints classification.See detailed docs at [Evaluation README](chinatravel/symbol_verification/readme.md)
-3. Introduced LLM-modulo baseline
-   Implement the LLM-modulo pipeline with a ground-truth symbolic verifier.
-   Based on methodology from:
-   Paper: Robust Planning with Compound LLM Architectures: An LLM-Modulo Approach
-   Codebase: https://github.com/Atharva-Gundawar/LLM-Modulo-prompts
-4. Support local LLMs inference with Qwen3-8B/4B.
-
 ## Quick Start
 
 ### Setup
@@ -80,23 +67,3 @@ python eval_exp.py --splits human --method LLMNeSy_deepseek
 
 [Environment](chinatravel/environment/readme.md)
 [Constraints](chinatravel/symbol_verification/readme.md)
-
-## Contact
-
-If you have any problems, please contact [Jie-Jing Shao](shaojj@lamda.nju.edu.cn), [Bo-Wen Zhang](221900200@smail.nju.edu.cn), [Xiao-Wen Yang](yangxw@lamda.nju.edu.cn).
-
-## Citation
-
-If our paper or related resources prove valuable to your research, we kindly ask for citation.
-
-```
-@misc{shao2024chinatravelrealworldbenchmarklanguage,
-      title={ChinaTravel: A Real-World Benchmark for Language Agents in Chinese Travel Planning}, 
-      author={Jie-Jing Shao and Xiao-Wen Yang and Bo-Wen Zhang and Baizhi Chen and Wen-Da Wei and Guohao Cai and Zhenhua Dong and Lan-Zhe Guo and Yu-feng Li},
-      year={2024},
-      eprint={2412.13682},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2412.13682}, 
-}
-```
