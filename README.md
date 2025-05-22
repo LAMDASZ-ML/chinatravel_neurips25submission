@@ -5,8 +5,11 @@
 
 Official codebase for the paper "ChinaTravel: A Real-World Benchmark for Language Agents in Chinese Travel Planning".
 
+<!-- 
 | [Webpage](https://www.lamda.nju.edu.cn/shaojj/chinatravel/) | [Paper](https://arxiv.org/abs/2412.13682) | [Dataset(Huggingface)](https://huggingface.co/datasets/LAMDA-NeSy/ChinaTravel), [Dataset(ModelScope)](https://www.modelscope.cn/datasets/Cbphcr/ChinaTravel) |
-
+ -->
+[Dataset (Huggingface)](https://huggingface.co/datasets/LAMDA-NeSy/chinatravel_neurips25submission)
+ 
 <!-- 
 ![Overview](images/overview.png) -->
 
@@ -56,7 +59,7 @@ Note:
    3. `ReAct`: one-shot ReAct agent
    4. `LLM-modulo`: LLM-modulo agent
    5. `LLMNesy`: Neuro-Symbolic agent
-3. The `LLM-modulo` agent and the `LLMNesy agent with oracle translation` require labeled information, so they cannot be run on `human1000`.
+3. We retain the DSL annotations of "Human1000" as private information to prevent performance fraud or unfair comparisons. Researchers are encouraged to submit their results to us for evaluation on Human-1000. 
 4. If you want to skip the completed queries, please add the parameter `--skip 1`
 ### Evaluation
 
