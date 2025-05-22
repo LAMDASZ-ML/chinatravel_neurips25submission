@@ -1,9 +1,9 @@
 <center>
-  <h1>ChinaTravel: A Real-World Benchmark for Language Agents in Chinese Travel Planning
+  <h1>ChinaTravel: An Open-Ended Benchmark for Language Agents in Chinese Travel Planning
 </h1>
 </center>
 
-Official codebase for the paper "ChinaTravel: A Real-World Benchmark for Language Agents in Chinese Travel Planning".
+The offical codebase for our NeurIPS'25 (Datasets and Benchmarks Track) submission "ChinaTravel: An Open-Ended Benchmark for Language Agents in Chinese Travel Planning".
 
 <!-- 
 | [Webpage](https://www.lamda.nju.edu.cn/shaojj/chinatravel/) | [Paper](https://arxiv.org/abs/2412.13682) | [Dataset(Huggingface)](https://huggingface.co/datasets/LAMDA-NeSy/ChinaTravel), [Dataset(ModelScope)](https://www.modelscope.cn/datasets/Cbphcr/ChinaTravel) |
